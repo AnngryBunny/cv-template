@@ -7,9 +7,9 @@
     <title>CV Template</title>
   </head>
   <body>
-    <header class="main-header">
-      <nav class="main-nav">
-        <div class="container">
+    <div class="wrapper">
+      <header class="main-header">
+        <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link" href="#article-1">Link name 1</a>
@@ -24,53 +24,32 @@
               <a class="main-nav__link" href="#article-4">Link name 4</a>
             </li>
           </ul>
-        </div>
-      </nav>
-    </header>
+        </nav>
+      </header>
 
-    <main class="main-body">
-      <div class="container">
-        <div class="right-column">
-          <article class="right-column__article">
+      <main class="main-body">
+        <div class="left-column">
+          <article class="left-column__article">
             <img
-              class="main-header__image"
+              class="left-column__image"
               src="profile-image.jpg"
               alt="profile photo"
             />
-            <h1>Main Title</h1>
-            <h2>Subtitle</h2>
+            <h1 class="left-column__title">Main Title</h1>
+            <h2 class="left-column__title">Subtitle</h2>
           </article>
 
-          <article class="right-column__article" id="article-1">
-            <h2 class="right-column__title">Aricle name</h2>
-            <p class="right-column__paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
-              facere harum dicta dolor molestias amet eos! Doloribus molestiae
-              cum accusamus?
-            </p>
-          </article>
-
-          <article class="right-column__article" id="article-2">
-            <h2 class="right-column__title">Aricle name</h2>
-            <p class="right-column__paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
-              facere harum dicta dolor molestias amet eos! Doloribus molestiae
-              cum accusamus?
-            </p>
-          </article>
-        </div>
-
-        <div class="left-column">
-          <article class="left-column__article" id="article-3">
-            <h2 class="left-column__title">Aricle name</h2>
+          <article class="left-column__article" id="article-1">
+            <h2 class="left-column__title">Article name</h2>
             <p class="left-column__paragraph">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
               facere harum dicta dolor molestias amet eos! Doloribus molestiae
               cum accusamus?
             </p>
           </article>
-          <article class="left-column__article" id="article-4">
-            <h2 class="left-column__title">Aricle name</h2>
+
+          <article class="left-column__article" id="article-2">
+            <h2 class="left-column__title">Article name</h2>
             <p class="left-column__paragraph">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
               facere harum dicta dolor molestias amet eos! Doloribus molestiae
@@ -78,12 +57,29 @@
             </p>
           </article>
         </div>
-      </div>
-    </main>
 
-    <footer class="main-footer">
-      <div class="container">
-        <div class="main-footer__github">
+        <div class="right-column">
+          <article class="right-column__article" id="article-3">
+            <h2 class="right-column__title">Article name</h2>
+            <p class="right-column__paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+              facere harum dicta dolor molestias amet eos! Doloribus molestiae
+              cum accusamus?
+            </p>
+          </article>
+          <article class="right-column__article" id="article-4">
+            <h2 class="right-column__title">Article name</h2>
+            <p class="right-column__paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+              facere harum dicta dolor molestias amet eos! Doloribus molestiae
+              cum accusamus?
+            </p>
+          </article>
+        </div>
+      </main>
+
+      <footer class="main-footer">
+        <div class="main-footer__item">
           <a class="main-footer__link" href="#"
             ><img class="main-footer__logo" src="cat.svg" alt="Cat logo" /><span
               class="main-footer__span"
@@ -91,12 +87,12 @@
             ></a
           >
         </div>
-        <div class="main-footer__copyright">
+        <div class="main-footer__item">
           <span class="main-footer__span"
             >&copy; 2023, All Rights reserved.
           </span>
         </div>
-        <div class="main-footer__rsschool">
+        <div class="main-footer__item">
           <a class="main-footer__link" href="#"
             ><img class="main-footer__logo" src="cat.svg" alt="Cat logo" /><span
               class="main-footer__span"
@@ -104,7 +100,7 @@
             ></a
           >
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
