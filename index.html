@@ -4,36 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
+    <title>CV Template</title>
   </head>
   <body>
-    <nav class="main-nav">
-      <div class="container">
-        <ul class="main-nav__list">
-          <li class="main-nav__link">Link name 1</li>
-          <li class="main-nav__link">Link name 2</li>
-          <li class="main-nav__link">Link name 3</li>
-          <li class="main-nav__link">Link name 4</li>
-        </ul>
-      </div>
-    </nav>
-
     <header class="main-header">
-      <div class="container">
-        <img
-          class="main-header__image"
-          src="profile-image.jpg"
-          alt="profile photo"
-        />
-        <h1>Main Title</h1>
-        <h2>Subtitle</h2>
-      </div>
+      <nav class="main-nav">
+        <div class="container">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#article-1">Link name 1</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#article-2">Link name 2</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#article-3">Link name 3</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#article-4">Link name 4</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main class="main-body">
       <div class="container">
         <div class="right-column">
           <article class="right-column__article">
+            <img
+              class="main-header__image"
+              src="profile-image.jpg"
+              alt="profile photo"
+            />
+            <h1>Main Title</h1>
+            <h2>Subtitle</h2>
+          </article>
+
+          <article class="right-column__article" id="article-1">
             <h2 class="right-column__title">Aricle name</h2>
             <p class="right-column__paragraph">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
@@ -42,7 +50,7 @@
             </p>
           </article>
 
-          <article class="right-column__article">
+          <article class="right-column__article" id="article-2">
             <h2 class="right-column__title">Aricle name</h2>
             <p class="right-column__paragraph">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
@@ -53,7 +61,7 @@
         </div>
 
         <div class="left-column">
-          <article class="left-column__article">
+          <article class="left-column__article" id="article-3">
             <h2 class="left-column__title">Aricle name</h2>
             <p class="left-column__paragraph">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
@@ -61,7 +69,7 @@
               cum accusamus?
             </p>
           </article>
-          <article class="left-column__article">
+          <article class="left-column__article" id="article-4">
             <h2 class="left-column__title">Aricle name</h2>
             <p class="left-column__paragraph">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,

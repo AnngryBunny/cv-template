@@ -1,6 +1,55 @@
+body {
+  background-color: antiquewhite;
+}
+
+.main-body {
+  width: 80%;
+  margin: auto;
+}
+
+.main-body .container {
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+}
+
+.right-column {
+  background-color: coral;
+}
+
+.left-column {
+  background-color: rgb(219, 129, 96);
+}
+
 .main-header__image {
   width: 250px;
 }
 .main-footer__logo {
   width: 50px;
+}
+
+.main-footer .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.main-nav .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: end;
+}
+
+.main-nav__list {
+  grid-column-start: 3;
+}
+
+.main-nav__item {
+  display: inline;
+}
+
+@media screen and (max-width: 767px) {
+  .main-body .container,
+  .main-nav .container,
+  .main-footer .container {
+    grid-template-columns: 1fr;
+  }
 }
