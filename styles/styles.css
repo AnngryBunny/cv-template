@@ -1,10 +1,9 @@
 :root {
-  --background-color: #f1f1f1;
-  --left-column-accent-color: #d3f6d1;
-  --right-column-accent-color: #5c8d89;
-  --left-column-color: #74b49b;
-  --right-column-color: #d3f6d1;
-  --dark-color: #333;
+  --background-color: #239d60;
+  --left-column-accent-color: #a3de83;
+  --left-column-color: #f7f39a;
+  --right-column-color: #f1f1f1;
+  --dark-color: #212125;
 }
 
 * {
@@ -54,16 +53,28 @@ body {
 
 .main-nav {
   grid-column: 3;
+  margin: auto;
 }
 
 .main-nav__item {
   display: inline;
+  margin-left: 1.4em;
+}
+
+.main-nav__link,
+.main-footer__link {
+  color: var(--dark-color);
+}
+
+.main-header,
+.main-footer {
+  background-color: var(--left-column-accent-color);
 }
 
 .title,
 .subtitle {
   text-align: center;
-  color: var(--left-column-accent-color);
+  color: var(--background-color);
 }
 
 /*main-body*/
@@ -74,9 +85,7 @@ body {
   gap: 1em;
 }
 
-.left-column,
-.main-header,
-.main-footer {
+.left-column {
   background-color: var(--left-column-color);
 }
 
@@ -90,7 +99,7 @@ body {
 
 .left-column__title,
 .right-column__title {
-  background-color: #f1f1f1;
+  background-color: var(--left-column-accent-color);
 }
 
 .left-column__list,
@@ -102,6 +111,11 @@ body {
   list-style: none;
 }
 
+.left-column__link,
+.right-column__link {
+  color: var(--background-color);
+}
+
 .left-column__image {
   width: 250px;
 
@@ -109,8 +123,14 @@ body {
   margin: auto;
   margin-top: 1em;
 
-  border: 0.5em solid var(--left-column-accent-color);
+  border: 0.5em solid var(--background-color);
   border-radius: 50%;
+}
+
+.left-column__item {
+  margin-top: 0.5em;
+
+  text-align: justify;
 }
 
 .right-column {
@@ -126,33 +146,31 @@ body {
 .main-footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 1em;
 }
 
 .main-footer__logo {
   width: 50px;
 }
 
+.main-footer__item {
+  margin: auto;
+  padding: 0.5em;
+}
+
+.main-footer__span {
+  margin-left: 0.5em;
+}
+
 /*media queries*/
 
 @media screen and (max-width: 767px) {
-  .main-nav {
-    grid-column: 1;
-  }
-
-  .main-nav__item {
-    display: block;
-  }
-
-  .main-body {
-    grid-template-columns: 1fr;
-  }
-
-  .main-footer,
+  .main-body,
   .main-header {
     grid-template-columns: 1fr;
   }
 
-  .main-footer {
-    justify-items: center;
+  .main-nav__item {
+    margin-right: 1em;
   }
 }
