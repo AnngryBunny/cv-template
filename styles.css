@@ -37,6 +37,10 @@ body {
   font-weight: 700;
 }
 
+.italic-text {
+  font-style: italic;
+}
+
 /*main-header*/
 
 .main-header {
@@ -84,12 +88,18 @@ body {
   text-indent: 1.5em;
 }
 
-.left-column__list {
+.left-column__title,
+.right-column__title {
+  background-color: #f1f1f1;
+}
+
+.left-column__list,
+.right-column__list {
   margin: 0 1em;
 
   text-align: left;
 
-  list-style: circle;
+  list-style: none;
 }
 
 .left-column__image {
@@ -107,10 +117,8 @@ body {
   background-color: var(--right-column-color);
 }
 
-.right-column__list {
-  margin: 0 1em;
-
-  list-style: none;
+.right-column__item {
+  margin-top: 0.5em;
 }
 
 /*main-footer*/
