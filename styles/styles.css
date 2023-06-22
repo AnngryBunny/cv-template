@@ -165,6 +165,10 @@ body {
 /*media queries*/
 
 @media screen and (max-width: 767px) {
+  .wrapper {
+    margin: 0;
+  }
+
   .main-body,
   .main-header {
     grid-template-columns: 1fr;
